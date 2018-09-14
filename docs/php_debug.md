@@ -24,4 +24,3 @@
 * 最后的最后，你就可以debug了，像这样
     ![debug code](./images/debug_code.png)
     
-
