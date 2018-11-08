@@ -5,6 +5,7 @@
 <body>
 <h1>Uploading file...</h1>
 <?php
+define("Root", dirname(__FILE__));
 if ($_FILES['userfile']['error'] > 0) {
     echo 'Problem:';
     switch ($_FILES['userfile']['error']) {
@@ -29,7 +30,7 @@ if ($_FILES['userfile']['type'] != 'text/plain') {
     exit;
 }
 //put the file where we'd like it
-$upfile = '/uploads/' . $_FILES['userfile']['name'];
+$upfile = Root.'/uploads/' . $_FILES['userfile']['name'];
 if (is_uploaded_file($_FILES['userfile']['tmp_name'])) {
     if (!move_uploaded_file($_FILES['userfile']['tmp_name'], $upfile)) {
         echo 'Problem:Could not move file to destination directory';
