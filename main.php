@@ -3,4 +3,3 @@
 require("reusable.php");
 echo"The script will end now.<br/>"; */
 echo phpinfo();
-?>
