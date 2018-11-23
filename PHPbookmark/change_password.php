@@ -2,7 +2,7 @@
  
 /**
  * @author Vincent <caozheng618@163.com>
- * @copyright 2018 
+ * @copyright 2018
  * 修改数据库中用户密码的表单
  */
     //require_once语句和require语句完全相同,唯一区别是PHP会检查该文件是否已经被包含过,如果是则不会再次包含。
